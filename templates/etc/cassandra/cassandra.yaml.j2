@@ -66,7 +66,7 @@ listen_address: {{ cassandra_listen_address }}
 start_native_transport: true
 native_transport_port: 9042
 start_rpc: false
-rpc_address: localhost
+rpc_address: {{ cassandra_listen_address }}
 rpc_port: 9160
 rpc_keepalive: true
 rpc_server_type: sync
